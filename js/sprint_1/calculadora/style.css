@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: pink;
+}
+
+.corpo_calc{
+    background-color: rgb(40, 224, 169);
+    border: solid rgb(39, 161, 125);
+    border-width: 0 3.5px 6px 0;
+    border-radius: 10px;
+    width: 15%;
+    height: 50%;
+
+    
+}
+
+.container_visor{
+    background-color: rgb(80, 82, 82);
+    border: solid rgb(60, 61, 61);
+    border-width: 0 4px 0 0;
+    padding: 4% 5%;
+    width: 89.5%;
+    height: 15%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    
+}
+
+.visor{
+    border-radius: 10px;
+    background-color: rgb(163, 219, 233);
+    border: solid rgb(61, 157, 179);
+    border-width: 0 1.5px 3px 0;
+    padding: 1%;
+    height: 90%;
+}
+
+.btn_large {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.btn_large_col2{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+.container_calc{
+    height: 74%;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
+    grid-column-gap: 2%;
+    padding: 5%;
+    grid-row-gap: 2%;
+
+}
+
+button{
+    /* padding: 25% 0; */
+    border-radius: 10px;
+    border: none;
+    border: solid rgb(71, 68, 68);
+    border-width: 0 1px 2px 0;
+    color: white;
+    font-weight: bold;
+    font-size: 10pt;
+    transition: transform 0.2s linear;
+}
+
+button:hover{
+    transform: translate(0px, -2.5px);
+    cursor: pointer;
+}
+
+.nbr_btn{
+    background-color: rgb(255, 145, 0);
+}
+
+.nbr_btn:hover{
+    background-color: orange;
+}
+
+.opr_btn{
+    background-color: rgb(50, 50, 88);
+}
+
+.opr_btn:hover{
+    background-color: rgb(62, 62, 110);
+}
+
+.eql_btn{
+    background-color: rgb(238, 91, 123);
+}
+
+.eql_btn:hover{
+    background-color: rgb(235, 107, 134);    
+}
+
+.reflexo{
+    background-color: white;
+    border: 1px solid white;
+    transform: rotate(15deg);
+    transform: skew(-18deg, 2deg);
+}
+
+.reflexo_1{
+    width: 4%;
+    height: 94%;
+    margin-top: -27%;
+    margin-left: 6%;
+}
+
+.reflexo_2{
+    width: 1%;
+    height: 94%;
+    margin-top: -25%;
+    margin-left: 14%;
+}
