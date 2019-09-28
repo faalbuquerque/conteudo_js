@@ -42,6 +42,9 @@ body{
     border-width: 0 1.5px 3px 0;
     padding: 1%;
     height: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
 }
 
 .btn_large {

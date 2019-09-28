@@ -10,35 +10,36 @@
 <body>
     <div class="corpo_calc">
         <div class="container_visor">
-            <div class="visor"></div>
+            <div class="visor">0</div>
             <div class="reflexo reflexo_1"></div>
             <div class="reflexo reflexo_2"></div>
         </div>
         <div class="container_calc">
            
-                <button class="nbr_btn">1</button>
-                <button class="nbr_btn">2</button>
-                <button class="nbr_btn">3</button>
-                <button class="opr_btn">+</button>
+                <button class="nbr_btn" onclick="capturaValor('1')">1</button>
+                <button class="nbr_btn" onclick="capturaValor('2')">2</button>
+                <button class="nbr_btn" onclick="capturaValor('3')">3</button>
+                <button class="opr_btn" onclick="capturaValor('+')">+</button>
             
-                <button  class="nbr_btn">4</button>
-                <button class="nbr_btn">5</button>
-                <button class="nbr_btn">6</button>
-                <button class="opr_btn">-</button>
+                <button  class="nbr_btn" onclick="capturaValor('4')">4</button>
+                <button class="nbr_btn" onclick="capturaValor('5')">5</button>
+                <button class="nbr_btn" onclick="capturaValor('6')">6</button>
+                <button class="opr_btn" onclick="capturaValor('-')">-</button>
             
-                <button class="nbr_btn">7</button>
-                <button class="nbr_btn">8</button>
-                <button class="nbr_btn">9</button>
-                <button class="opr_btn">*</button>
+                <button class="nbr_btn" onclick="capturaValor('7')">7</button>
+                <button class="nbr_btn" onclick="capturaValor('8')">8</button>
+                <button class="nbr_btn" onclick="capturaValor('9')">9</button>
+                <button class="opr_btn" onclick="capturaValor('*')">*</button>
             
-                <button class="btn_large nbr_btn">0</button>
-                <button class="eql_btn">=</button>
-                <button class="opr_btn">/</button>
+                <button class="btn_large nbr_btn" onclick="capturaValor('0')">0</button>
+                <button class="eql_btn" onclick="function_operacao('')">=</button>
+                <button class="opr_btn" onclick="capturaValor('/')">/</button>
             
-                <button class="btn_large opr_btn">DEL</button>
-                <button class="btn_large_col2 opr_btn">AC</button>
+                <button class="btn_large opr_btn" onclick="capturaValor('DEL')">DEL</button>
+                <button class="btn_large_col2 opr_btn" onclick="capturaValor('AC')">AC</button>
             
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
