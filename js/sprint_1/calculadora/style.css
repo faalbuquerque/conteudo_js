@@ -110,8 +110,8 @@ button:hover{
 @media (max-width: 600px) 
 {
     .corpo_calc{
-        width: 90%;
-        height: 90%;   
+        width: 95%;
+        height: 95%;   
      }
      button{
         font-size: 18pt;
