@@ -22,6 +22,25 @@ function capturaValor(numero){
             (visor.textContent == 0) ? visor.textContent = numero : visor.textContent += numero;
 
             break;
+        
+
+        case '-':
+            operacao = 'menos';
+            (visor.textContent == 0) ? visor.textContent = numero : visor.textContent += numero;
+
+        break;
+
+        case '*':
+            operacao = 'produto';
+            (visor.textContent == 0) ? visor.textContent = numero : visor.textContent += numero;
+
+            break;
+
+        case '/':
+            operacao = 'divisao';
+            (visor.textContent == 0) ? visor.textContent = numero : visor.textContent += numero;
+
+        break;
 
         case 'AC':
             visor.textContent = 0;
@@ -52,6 +71,7 @@ function capturaValor(numero){
 
 }
 
+
 function function_operacao(){
     // v1 operacao v2;
     
@@ -59,15 +79,51 @@ function function_operacao(){
 
     switch(operacao){
         case 'mais':
-            let valores = visor.textContent.split('+')
+            let valoresMais = visor.textContent.split('+')
 
-            let soma = valores.reduce(function( total ,element){
+            let soma = valoresMais.reduce(function( total ,element){
                 return Number(total) + Number(element);
             });
             
             visor.textContent = soma; 
             
             break;
+        
+        case 'menos':
+            let valoresMenos = visor.textContent.split('-')
+
+            let subtracao = valoresMenos.reduce(function( total ,element){
+                return Number(total) - Number(element);
+            });
+            
+            visor.textContent = subtracao; 
+            
+            break;
+
+        case 'produto':
+            let valoresProduto = visor.textContent.split('*')
+
+            let produto = valoresProduto.reduce(function( total ,element){
+                return Number(total) * Number(element);
+            });
+            
+            visor.textContent = produto; 
+            
+            break;
+
+        case 'divisao':
+            let valoresDivisao = visor.textContent.split('/')
+
+            let divisao = valoresDivisao.reduce(function( total ,element){
+                return Number(total) / Number(element);
+            });
+            
+            visor.textContent = divisao; 
+            
+            break;
+
     }
+
+
     // console.log(visor.textContent.split('+'));
 }
