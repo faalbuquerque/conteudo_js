@@ -111,11 +111,11 @@ button:hover{
 
     body{
         width: 100%;
-        height: 98vh; 
+        height: 100vh; 
     }
     .corpo_calc{
-        width: 95%;
-        height: 90%;  
+        width: 100%;
+        height: 100%;  
      }
      button{
         font-size: 18pt;
