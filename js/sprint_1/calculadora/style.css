@@ -107,8 +107,12 @@ button:hover{
 }
 
 
-@media (max-width: 600px) 
-{
+@media (max-width: 600px) {
+
+    body{
+        width: 100%;
+        height: 98vh; 
+    }
     .corpo_calc{
         width: 95%;
         height: 90%;  
